@@ -1,0 +1,370 @@
+ 
+ 
+ *{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+ .mainsection{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+
+    
+ }
+  .mainsection>h1{
+                 margin-top: 70px;
+              text-shadow: 
+  0 0 10px purple,
+  0 0 25px violet,
+  0 0 45px purple;
+  }
+  
+ #skills{
+         height:550px ;
+         width: 95%;
+         display: flex;
+         justify-content: space-around;
+
+         /* align-items: center; */
+
+         /* background-color: red; */
+         animation: fadeout 1s ease-in-out forwards;
+         animation-timeline:view(10% 90%);
+         
+ }
+ @keyframes fadeout{
+         0%{
+            opacity: 1;
+         }
+         100%{
+            opacity: 0;
+         }
+ }
+ ::selection{
+ 
+    color: rgb(69, 69, 201);
+ }
+ .firstcontainer{
+
+    width: 30%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .heading{
+    text-align: center;
+    text-shadow: 0px 0px 25px purple,  0px 0px 10px white;
+    
+ }
+ .technical-container{
+                     width: 80%;
+                     margin-top: 35px;
+                     background-image: radial-gradient(aqua -10%,black,rgb(53, 48, 48) 40%,black 50%);
+
+ }
+ .technical-container .bar1{
+    margin:40px 0;
+
+ }
+ .technical-container .bar1:first-child{
+    margin-top: 0%;
+ }
+ .technical-container .bar1:last-child{
+    margin-bottom: 0%;
+ }
+ .technical-container .bar1 .info1{
+    margin-bottom: 5px;
+ }
+ .technical-container .bar1 .info1 span{
+    font-size: 17px ;
+    font-weight: 500;
+    animation: showtext .5s 1s linear forwards;
+    opacity: 0;
+ }
+ .technical-container .bar1 .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation-timeline: view(85% 10%);
+
+ }
+ @keyframes  animate {
+    100%{
+        transform: scaleX(1);
+    }
+    
+ }
+ .technical-container .bar1 .progress-line span{
+    height: 100%;
+    background-color: purple;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;  
+ }
+ .progress-line.html span{
+    width: 95%;
+ }
+ .progress-line.css span{
+    width: 90%;
+ }
+ .progress-line.javascript span{
+    width: 85%;
+ }
+ .progress-line.reactjs span{
+    width: 85%;
+ }
+ .progress-line.nodejs span{
+    width: 80%;
+ }
+ .progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #252222;
+    box-shadow: 0px 0px 5px white;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showtext .5s 1.5s linear forwards;
+    opacity: 0;
+ }
+ .progress-line.html span::after{
+    content:"95%";
+ }
+ .progress-line.css span::after{
+    content:"90%";
+ }
+ .progress-line.javascript span::after{
+    content:"85%";
+ }
+ .progress-line.reactjs span::after{
+    content:"85%";
+ }
+ .progress-line.nodejs span::after{
+    content:"80%";
+ }
+
+ .progress-line span::before{
+    content: "";
+    position:  absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width:0px ;
+    border-right-width:0px ;
+    border-top-color: red ;
+    top: -10px ;
+    right: 0;
+    animation: showtext 0.5s 1.5s linear forwards;
+    opacity: 0;
+ }
+
+
+
+
+ .professonalbars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+ }
+ .professonalbars .radialbar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+ }
+ .professonalbars .radialbar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+ }
+
+ .professonalbars .radialbar .progress-bar{
+    stroke-width: 10;
+    stroke: purple ;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s ease-in-out forwards;
+    animation-timeline: view(85% 10%);
+ }
+ @keyframes  animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+ }
+
+ .path{
+    stroke-width: 10;
+    stroke-width: blue;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+ }
+ 
+ .path1{
+    animation: animate-path1 1s 1s linear forwards;   
+ }
+ .path2{
+    animation: animate-path2 1s 1s linear forwards;
+    
+ }.path3{
+    animation: animate-path3 1s 1s linear forwards;
+    
+ }.path4{
+    animation: animate-path4 1s 1s linear forwards;
+    
+ }
+@keyframes  animate-path1 {
+    100%{
+        stroke-dashoffset: 50;
+    }    
+}
+@keyframes  animate-path2 {
+    100%{
+        stroke-dashoffset: 175;
+    }    
+}@keyframes  animate-path3 {
+    100%{
+        stroke-dashoffset: 125;
+    }    
+}@keyframes  animate-path4 {
+    100%{
+        stroke-dashoffset: 75;
+    }    
+}
+.second-container{
+     width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+                  
+}
+
+.radialbar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5 1s linear forwards;
+    opacity: 0;
+    /* background-color: red; */
+    color: white;
+    text-shadow: 0px 0px 15px purple;
+   
+}
+.radialbar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5s 1s linear forwards;
+    opacity: 0;
+}
+ @keyframes showtext {
+    100%{
+        opacity: 1;
+       
+    }
+ }
+ @media only screen and (min-height: 600px) and (max-width: 900px){
+
+    .firstcontainer{
+                   width: 70%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+    }
+    .firstcontainer .heading{
+                   
+    }
+    /* .second-container{
+                     align-items: flex-end;
+    } */
+
+ }
+
+
+ @media only screen and (min-height: 450px) and (max-width: 600px){
+                    #skills{
+                height: auto;
+                flex-direction: column;
+                gap: none;
+         }
+         .firstcontainer{
+                        width: 70%;
+                        display: flex;
+                        justify-content: center;
+                       margin-top: 0%;
+                       margin: 0% auto;
+
+         }
+         .second-container{
+                         width: 95%;
+                         margin: 0% auto;
+                         justify-content: flex-start;
+                        
+         }
+         .technical-container{
+                             width: 100%;
+         }
+
+ }
+
+ @media only screen and (min-height:300px) and (max-width:450px){
+         #skills{
+                height: auto;
+                flex-direction: column;
+                gap: none;
+         }
+         .firstcontainer{
+                        width: 95%;
+                        display: flex;
+                        justify-content: center;
+                       margin-top: 0%;
+                       margin: 0% auto;
+
+         }
+         .second-container{
+                         width: 95%;
+                         margin: 0% auto;
+                         justify-content: flex-start;
+                        
+         }
+      
+ }
+ 
+ 
+

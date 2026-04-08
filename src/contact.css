@@ -1,0 +1,147 @@
+.co-mc{
+       min-height: 100vh;
+       background-color: black;
+       display: flex;
+       align-items: center;
+       
+       flex-direction: column;
+}
+
+.co-mc>h1{
+       color: white;
+       text-align: center;
+       padding-top: 85px;
+        text-shadow: 
+  0 0 10px purple,
+  0 0 25px violet,
+  0 0 45px purple;
+ 
+}
+.con-m{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 500px;
+       /* background-color: yellow; */
+       width: 70%;
+       gap: 20px;
+}
+.con-main{
+         width: 50%;
+         /* background-color: red; */
+}
+.con-main1{
+           color: white;
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+         
+}
+.con-main1 p{
+             line-height: 1.5;
+}
+ 
+.t-row td{
+       padding-top:15px ;
+}
+.con-con{
+         color: purple;
+}
+.con-icons{
+          justify-content: start;
+}
+.con-main2 form{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           width: 100%;
+           border: 2px solid purple;
+           gap: 30px;
+           height: 350px;
+           border-radius: 10px;
+}
+.con-main2 form input{
+                    width: 85%;
+                    height: 35px;
+                    border-radius: 5px;
+         padding: 10px;
+           border: none;
+         outline: none;
+         background-color: black;
+         border: 2px solid purple;
+         color: white;
+         
+                    
+}
+
+.con-txt{
+         width: 85%;
+         height: 100px;
+         border-radius: 5px;
+         padding: 10px;
+         border: 2px solid purple;
+         outline: none;
+         background-color: black;
+         color: white;
+
+}
+.con-main2 form button{
+                      padding: 10px 30px;
+                      border-radius: 50px;
+                      color: white;
+                      background-color: red;
+                      border: none;
+}
+.con-main2 form button:active{
+                             transform: scale(.7);
+}
+@media only screen and (min-width:600px) and (max-width:750px){
+       .co-mc>h1{
+              width: 80%;
+       }
+       .con-m{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin-top: 100px;
+
+       }
+       .con-main{
+                 width: 100%;
+       }
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+       .co-mc>h1{
+              width: 80%;
+       }
+       .con-m{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin-top: 100px;
+              width: 85%;
+       }
+       .con-main{
+                 width: 100%;
+       }
+}
+@media only screen and (min-width:450px) and (max-width:600px){
+       .co-mc>h1{
+              width: 80%;
+       }
+       .con-m{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin-top: 100px;
+
+       }
+       .con-main{
+                 width: 100%;
+       }
+}
