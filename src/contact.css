@@ -3,8 +3,8 @@
        background-color: black;
        display: flex;
        align-items: center;
-       
        flex-direction: column;
+        
 }
 
 .co-mc>h1{
@@ -21,10 +21,11 @@
        display: flex;
        align-items: center;
        justify-content: center;
-       height: 500px;
+       min-height: 500px;
        /* background-color: yellow; */
        width: 70%;
        gap: 20px;
+       padding: 10px;
 }
 .con-main{
          width: 50%;
